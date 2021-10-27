@@ -1,16 +1,16 @@
 import {HtagProps} from "./Htag.props";
-import styles from './Hteg.module.css';
+import styles      from './Hteg.module.css';
 
 
 export const Htag = ({tag, children}: HtagProps): JSX.Element => {
     switch (tag) {
         case 'h1':
-           return <h1 className={styles.h1m}>{children}</h1>;
+            return <h1 className={styles.h1m}>{children}</h1>;
         case 'h2':
-           return <h2 className={styles.h1m}>{children}</h2>;
+            return <h2 className={styles.h1m}>{children}</h2>;
         case 'h3':
-           return <h3 className={styles.h1m}>{children}</h3>;
+            return <h3 className={styles.h1m}>{children}</h3>;
         default:
-           return <></>;
+            return <></>;
     }
 };
