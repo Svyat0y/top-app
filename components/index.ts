@@ -1,3 +1,4 @@
 export * from './Hteg/Hteg';
-export * from './Pteg/Pteg';
+export * from './Ptag/Ptag';
 export * from './Button/Button';
+export * from './Tag/Tag';
