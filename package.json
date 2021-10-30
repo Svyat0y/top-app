@@ -23,7 +23,6 @@
     "classnames": "^2.3.1",
     "eslint": "^7.23.0",
     "eslint-plugin-react": "^7.26.1",
-    "next-images": "^1.8.1",
     "stylelint": "^14.0.0",
     "stylelint-config-standard": "^23.0.0",
     "stylelint-order": "^5.0.0",
