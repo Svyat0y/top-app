@@ -1,9 +1,9 @@
 import {Htag, Button, Ptag, Tag, Rating} from '../components';
 import {useState}                        from 'react';
-import {Layout}                          from '../layout/Layout';
+import {withLayout}                      from '../hoc/withLayout';
 
 
-export default function Home(): JSX.Element {
+const Home = (): JSX.Element => {
 
     const [rating, setRating] = useState<number>(0);
 
@@ -30,4 +30,6 @@ export default function Home(): JSX.Element {
             <Rating rating={rating} isEditable={true} setRating={setRating}/>
         </>
     );
-}
+};
+
+export default withLayout(Home);
