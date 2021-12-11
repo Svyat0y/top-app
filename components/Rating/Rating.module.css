@@ -1,19 +1,19 @@
 .filled svg {
-    fill: var(--primary);
+	fill: var(--primary);
 }
 
 .star svg {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 .star svg:focus {
-    outline: none;
+	outline: none;
 }
 
 .star svg:focus-visible {
-    outline: 2px solid var(--primary);
+	outline: 2px solid var(--primary);
 }
 
 .editable {
-    cursor: pointer;
+	cursor: pointer;
 }

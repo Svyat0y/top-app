@@ -4,8 +4,8 @@ import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, Next
 export default class MyDocument extends Document {
 
 	// метод getInitialProps возвращает initialProps из исходного документа в наш кастомный документ
-	static async getInitialProps( ctx: DocumentContext ): Promise<DocumentInitialProps> {
-		const initialProps = await Document.getInitialProps( ctx );
+	static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+		const initialProps = await Document.getInitialProps(ctx);
 		return { ...initialProps };
 	}
 

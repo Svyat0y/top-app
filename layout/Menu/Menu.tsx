@@ -13,8 +13,8 @@ import ProductsIcon                     from './icons/products.svg';
 const firstLevelMenu: FirstLevelMenuItem[] = [
 	{ route: 'courses', name: 'Курсы', icon: <CoursesIcon/>, id: TopLevelCategory.Courses },
 	{ route: 'services', name: 'Сервисы', icon: <ServicesIcon/>, id: TopLevelCategory.Services },
-	{ route: 'courses', name: 'Книги', icon: <BooksIcon/>, id: TopLevelCategory.Books },
-	{ route: 'courses', name: 'Товары', icon: <ProductsIcon/>, id: TopLevelCategory.Products }
+	{ route: 'books', name: 'Книги', icon: <BooksIcon/>, id: TopLevelCategory.Books },
+	{ route: 'products', name: 'Товары', icon: <ProductsIcon/>, id: TopLevelCategory.Products }
 ];
 
 export const Menu = (): JSX.Element => {
@@ -64,7 +64,7 @@ export const Menu = (): JSX.Element => {
 	const buildThirdLevel = (pages: PageItem[], route: string) => {
 		return (
 			pages.map(p => (
-				<a href={ `/${ route }/${ p.alias }` } className={ cn(styles.thirdLevel, {
+				<a key={ p._id } href={ `/${ route }/${ p.alias }` } className={ cn(styles.thirdLevel, {
 					[styles.thirdLevelActive]: false
 				}) }>
 					{ p.category }
@@ -75,9 +75,7 @@ export const Menu = (): JSX.Element => {
 
 	return (
 		<div>
-			<ul>
-				{ buildFirstLevel() }
-			</ul>
+			{ buildFirstLevel() }
 		</div>
 	);
 };

@@ -39,7 +39,6 @@
 
 .green {
     color: var(--green);
-    border: none;
     background: var(--green-light);
 }
 
